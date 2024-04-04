@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/019/097/522/original/checklist-to-do-list-work-task-notepad-blue-icon-on-abstract-cloud-background-free-vector.jpg'); /* Replace 'wallpaper.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+}
+
+/* Existing CSS styles */
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.editBtn,
+.deleteBtn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.editBtn::before {
+    content: "\270E"; /* Unicode for pencil icon */
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.deleteBtn::before {
+    content: "\2716"; /* Unicode for cross mark icon */
+    font-size: 18px;
+    margin-right: 10px;
+    color: #ff0000; /* Red color */
+}
